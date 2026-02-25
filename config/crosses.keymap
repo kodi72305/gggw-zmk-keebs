@@ -91,7 +91,6 @@
         ctrl_c {
             bindings = <&kp LC(C)>;
             key-positions = <27 50>;
-            layers = <0>;
             slow-release;
             require-prior-idle-ms = <50>;
             timeout-ms = <200>;
@@ -100,7 +99,6 @@
         ctrl_v {
             bindings = <&kp LC(V)>;
             key-positions = <27 49>;
-            layers = <0>;
             slow-release;
             timeout-ms = <200>;
             require-prior-idle-ms = <50>;
@@ -109,7 +107,6 @@
         num_lauer {
             bindings = <&mo 3>;
             key-positions = <50 49>;
-            layers = <0>;
             timeout-ms = <200>;
             require-prior-idle-ms = <100>;
             slow-release;
@@ -121,13 +118,11 @@
             timeout-ms = <120>;
             require-prior-idle-ms = <200>;
             slow-release;
-            layers = <0>;
         };
 
         lang_sh {
             bindings = <&kp LG(SPACE)>;
             key-positions = <36 50>;
-            layers = <0>;
             timeout-ms = <200>;
         };
     };
@@ -196,11 +191,11 @@
 
         media {
             bindings = <
-&trans  &trans  &trans  &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp CARET     &kp LT    &kt GT    &kp GRAVE                    &kp HASH   &kp MINUS    &kp EQUAL  &kp PLUS   &kp DLLR  &trans
-&trans  &trans  &kp TILDE     &kp LBRC  &kp RBRC  &kp SQT                      &kp COLON  &kp SEMI     &kp PIPE   &kp BSLH   &kp FSLH  &trans
-&trans  &trans  &kp ASTERISK  &kp LPAR  &kp RPAR  &kp DQT                      &kp AT     &kp PERCENT  &kp AMPS   &kp UNDER  &kp EXCL  &kp QUESTION
-                        &kp LG(V)  &kp LC(V)  &kp LC(C)  &trans  &trans  &trans
+&trans  &trans  &trans        &trans     &trans     &trans     &trans     &trans       &trans     &trans     &trans    &trans
+&trans  &trans  &kp CARET     &kp LT     &kt GT     &kp GRAVE  &kp HASH   &kp MINUS    &kp EQUAL  &kp PLUS   &kp DLLR  &trans
+&trans  &trans  &kp TILDE     &kp LBRC   &kp RBRC   &kp SQT    &kp COLON  &kp SEMI     &kp PIPE   &kp BSLH   &kp FSLH  &trans
+&trans  &trans  &kp ASTERISK  &kp LPAR   &kp RPAR   &kp DQT    &kp AT     &kp PERCENT  &kp AMPS   &kp UNDER  &kp EXCL  &kp QUESTION
+                              &kp LG(V)  &kp LC(V)  &kp LC(C)  &trans     &trans       &trans
             >;
         };
 
