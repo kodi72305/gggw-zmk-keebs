@@ -197,9 +197,9 @@
         media {
             bindings = <
 &trans  &trans  &trans  &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp CARET     &kp LT    &kt GT    &kp GRAVE                    &kp HASH   &kp MINUS    &kp EQUAL  &kp PLUS   &kp DLLR  &trans
+&trans  &trans  &kp TILDE     &kp LBRC  &kp RBRC  &kp SQT                      &kp COLON  &kp SEMI     &kp PIPE   &kp BSLH   &kp FSLH  &trans
+&trans  &trans  &kp ASTERISK  &kp LPAR  &kp RPAR  &kp DQT                      &kp AT     &kp PERCENT  &kp AMPS   &kp UNDER  &kp EXCL  &kp QUESTION
                         &kp LG(V)  &kp LC(V)  &kp LC(C)  &trans  &trans  &trans
             >;
         };
