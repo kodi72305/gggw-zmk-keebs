@@ -1,3 +1,4 @@
+#include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 #include <dt-bindings/zmk/modifiers.h>
 #include <behaviors.dtsi>
@@ -164,7 +165,7 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&trans           &kp N1                &kp N2                  &kp N3             &tog_mouse_on L_MOUSE       &many_healh     &many_money         &tog_mouse_on L_MOUSE         &tog_mouse_off L_MOUSE    &kp N9                    &kp N0                          &to L_ENCODING
+&trans           &kp N1                &kp N2                  &kp N3             &trans                &many_healh     &many_money         &trans                  &trans              &kp N9                    &kp N0                          &to L_ENCODING
 &kp ESCAPE       &kp Q                 &kp W                   &kp E              &kp R                 &kp T           &kp Y               &kp U                   &kp I               &kp O                     &kp P                           &kp LEFT_BRACKET
 &lt L_MEDIA TAB  &hrm_left LEFT_WIN A  &hrm_left LEFT_SHIFT S  &hrm_left LCTRL D  &hrm_left LEFT_ALT F  &kp G           &kp H               &hrm_right RIGHT_ALT J  &hrm_right RCTRL K  &hrm_right RIGHT_SHIFT L  &hrm_right RIGHT_WIN SEMICOLON  &kp SQT
 &kp LCTRL        &kp Z                 &kp X                   &kp C              &kp V                 &kp B           &kp N               &td_M                   &kp COMMA           &kp DOT                   &kp FSLH                        &kp BACKSLASH
