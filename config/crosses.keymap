@@ -1,11 +1,9 @@
-#include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 #include <dt-bindings/zmk/modifiers.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
-#include "input_processors.dtsi"
 
 #define L_BASE 0
 #define L_SUPPORT 1
@@ -43,20 +41,6 @@
             quick-tap-ms = <200>;
             require-prior-idle-ms = <125>;
             bindings = <&mo>, <&mkp>;
-        };
-
-        tog_mouse_on: tog_mouse_on {
-            compatible = "zmk,behavior-toggle-layer";
-            label = "TOG_MOUSE_ON";
-            #binding-cells = <1>;
-            toggle-mode = "on";
-        };
-
-        tog_mouse_off: tog_mouse_off {
-            compatible = "zmk,behavior-toggle-layer";
-            label = "TOG_MOUSE_OFF";
-            #binding-cells = <1>;
-            toggle-mode = "off";
         };
 
         hrm_right: hrm_right {
