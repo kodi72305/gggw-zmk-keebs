@@ -35,20 +35,6 @@
             bindings = <&mo>, <&mkp>;
         };
 
-        tog_mouse_on: tog_mouse_on {
-            compatible = "zmk,behavior-toggle-layer";
-            label = "TOG_MOUSE_ON";
-            #binding-cells = <1>;
-            toggle-mode = "on";
-        };
-
-        tog_mouse_off: tog_mouse_off {
-            compatible = "zmk,behavior-toggle-layer";
-            label = "TOG_MOUSE_OFF";
-            #binding-cells = <1>;
-            toggle-mode = "off";
-        };
-
         hrm_right: hrm_right {
             compatible = "zmk,behavior-hold-tap";
             label = "HRM_RIGHT";
