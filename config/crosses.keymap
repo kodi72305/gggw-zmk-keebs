@@ -1,4 +1,5 @@
 #include <input/processors.dtsi>
+#include "input_processors.dtsi"
 #include <dt-bindings/zmk/input_transform.h>
 #include <dt-bindings/zmk/modifiers.h>
 #include <behaviors.dtsi>
@@ -251,6 +252,8 @@
     };
 };
 
+#ifdef CONFIG_SHIELD_CROSSES_RIGHT
+
 &trackball_central { cpi = <1000>; };
 
 &trackball_central_listener {
@@ -269,3 +272,5 @@
         input-processors = <&zip_xy_scaler 1 4>;
     };
 };
+
+#endif /* CONFIG_SHIELD_CROSSES_RIGHT */
