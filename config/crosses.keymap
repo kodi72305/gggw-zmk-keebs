@@ -226,7 +226,7 @@
 &trans          &code_Q      &code_W      &code_E      &code_R       &code_T      &code_Y      &code_U          &code_I      &code_O      &code_P      &trans
 &kp LEFT_SHIFT  &code_A      &code_S      &code_D      &code_F       &code_G      &code_H      &code_J          &code_K      &code_L      &trans       &trans
 &trans          &code_Z      &code_X      &code_C      &code_V       &code_B      &code_N      &code_M          &trans       &trans       &trans       &trans
-                                          &trans       &code_delete  &mo 0        &trans       &code_backspace  &trans
+                                          &tog 7       &code_delete  &mo 0        &trans       &code_backspace  &trans
             >;
         };
     };
