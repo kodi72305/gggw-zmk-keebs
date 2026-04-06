@@ -1,1 +1,7 @@
-#include <zephyr/kernel.h>\n\nvoid zaf_error_trigger(int err)\n{\n    ARG_UNUSED(err);\n}\n
+#include <zephyr/kernel.h>
+
+void zaf_error_trigger(int err)
+{
+    ARG_UNUSED(err);
+}
+
