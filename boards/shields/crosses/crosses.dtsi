@@ -25,6 +25,10 @@
 };
 
 / {
+  chosen {
+    zmk,kscan = &kscan0;
+    zmk,physical-layout = &gggw_crosses_54_layout;
+  };
 
   default_transform: keymap_transform0 {
     compatible = "zmk,matrix-transform";
@@ -107,3 +111,4 @@
     status = "disabled";
   };
 };
+
