@@ -211,7 +211,7 @@
         base_en {
             display-name = "Base EN";
             bindings = <
-&trans      &trans                &trans                  &trans             &trans                &trans          &many_money         &trans                  &trans                &trans                    &lg_tog                         &to 9
+&trans      &trans                &trans                  &trans             &trans                &trans          &many_money         &trans                  &trans                &trans                    &lg_tog                         &to 11
 &kp ESCAPE  &kp Q                 &kp W                   &kp E              &kp R                 &kp T           &kp Y               &kp U                   &kp I                 &kp O                     &kp P                           &kp LEFT_BRACKET
 &lt 6 TAB   &hrm_left LEFT_WIN A  &hrm_left LEFT_SHIFT S  &hrm_left LCTRL D  &hrm_left LEFT_ALT F  &kp G           &kp H               &hrm_right RIGHT_ALT J  &hrm_right RCTRL K    &hrm_right RIGHT_SHIFT L  &hrm_right RIGHT_WIN SEMICOLON  &kp SQT
 &kp LCTRL   &kp Z                 &kp X                   &kp C              &kp V                 &kp B           &kp N               &kp M                   &kp COMMA             &kp DOT                   &kp FSLH                        &kp BACKSLASH
@@ -304,6 +304,16 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &mo 3     &trans    &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB1  &mkp MB2  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans  &trans    &trans    &trans
+            >;
+        };
+
+        sniper {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
