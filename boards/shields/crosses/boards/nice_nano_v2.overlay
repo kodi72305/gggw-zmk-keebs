@@ -1,5 +1,4 @@
 #include <dt-bindings/zmk/input_transform.h>
-#include <dt-bindings/led/led.h>
 
 &pinctrl {
     i2c0_default: i2c0_default {
@@ -37,19 +36,6 @@
             low-power-enable;
         };
     };
-
-    spi3_default: spi3_default {
-        group1 {
-            psels = <NRF_PSEL(SPIM_MOSI, 0, 12)>;
-        };
-    };
-
-    spi3_sleep: spi3_sleep {
-        group1 {
-            psels = <NRF_PSEL(SPIM_MOSI, 0, 12)>;
-            low-power-enable;
-        };
-    };
 };
 
 &i2c0 {
@@ -65,54 +51,4 @@
   pinctrl-0 = <&spi1_default>;
   pinctrl-1 = <&spi1_sleep>;
   pinctrl-names = "default", "sleep";
-};
-
-&spi3 {
-    compatible = "nordic,nrf-spim";
-    status = "okay";
-
-    pinctrl-0 = <&spi3_default>;
-    pinctrl-1 = <&spi3_sleep>;
-    pinctrl-names = "default", "sleep";
-
-    led_strip: ws2812@0 {
-        compatible = "worldsemi,ws2812-spi";
-        reg = <0>;
-        spi-max-frequency = <4000000>;
-        chain-length = <12>;
-        spi-one-frame = <0x70>;
-        spi-zero-frame = <0x40>;
-        color-mapping = <LED_COLOR_ID_GREEN LED_COLOR_ID_RED LED_COLOR_ID_BLUE>;
-    };
-};
-
-/ {
-    zaf: adaptive_feedback {
-        compatible = "zmk,adaptive-feedback";
-        status = "okay";
-        led-strip = <&led_strip>;
-        chain-length = <12>;
-        error-slots = <2>;
-
-        error_slot0: error_slot0 {
-            label = "PMW3610 Error";
-            event-type = "error";
-            error-slot-index = <0>;
-            colors = <0xFF 0x00 0x00>;
-            animation = "flash";
-            flash-duration-ms = <500>;
-            feedback-duration = <300>;
-        };
-
-        error_slot1: error_slot1 {
-            label = "PMW3610 Warning";
-            event-type = "error";
-            error-slot-index = <1>;
-            colors = <0xFF 0x40 0x00>;
-            animation = "blink";
-            blink-on-ms = <250>;
-            blink-off-ms = <250>;
-            persistent;
-        };
-    };
 };
