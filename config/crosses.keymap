@@ -202,6 +202,47 @@
             tap-ms = <30>;
         };
 
+        win_combo: win_combo {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            wait-ms = <0>;
+            tap-ms = <30>;
+            bindings =
+                <&macro_press &kp LGUI>,
+                <&macro_tap>,
+                <&macro_param_1to1 &kp MACRO_PLACEHOLDER>,
+                <&macro_release &kp LGUI>;
+            label = "WIN_COMBO";
+        };
+
+        rwin_combo: rwin_combo {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            wait-ms = <0>;
+            tap-ms = <30>;
+            bindings =
+                <&macro_press &kp RGUI>,
+                <&macro_tap>,
+                <&macro_param_1to1 &kp MACRO_PLACEHOLDER>,
+                <&macro_release &kp RGUI>;
+            label = "RWIN_COMBO";
+        };
+
+        win_ctrl_combo: win_ctrl_combo {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            wait-ms = <0>;
+            tap-ms = <30>;
+            bindings =
+                <&macro_press &kp LCTRL &kp LGUI>,
+                <&macro_tap>,
+                <&macro_param_1to1 &kp MACRO_PLACEHOLDER>,
+                <&macro_release &kp LGUI>,
+                <&macro_release &kp LCTRL>;
+            label = "WIN_CTRL_COMBO";
+        };
+
+
         #include "encoding_macros.dtsi"
     };
 
@@ -266,10 +307,10 @@
         hotkey_layer {
             display-name = "Hotkeys";
             bindings = <
-&kp LC(LG(TILDE))  &kp LG(LC(SPACE))  &trans              &trans              &kp LC(PRINTSCREEN)  &kp LA(PRINTSCREEN)  &sys_reset           &trans                   &trans           &trans  &trans  &bt BT_NXT
-&kp LG(TILDE)      &kp LC(LG(SPACE))  &trans              &kp LG(PAGE_DOWN)   &kp LG(PAGE_UP)      &trans               &kp K_PREV           &kp C_PLAY_PAUSE         &kp C_NEXT       &trans  &trans  &trans
-&kp LG(T)          &kp LG(Z)          &kp RG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(UP_ARROW)     &kp RG(RIGHT)        &kp C_VOL_DN         &kp K_MUTE               &kp C_VOLUME_UP  &trans  &trans  &trans
-&kp LG(TAB)        &trans             &kp LC(LG(D))       &kp LG(LC(LEFT))    &kp LG(LC(RIGHT))    &kp LG(LC(F4))       &kp LC(PRINTSCREEN)  &kp LA(LC(PRINTSCREEN))  &trans           &trans  &trans  &trans
+&win_ctrl_combo TILDE  &win_ctrl_combo SPACE  &trans              &trans              &kp LC(PRINTSCREEN)  &kp LA(PRINTSCREEN)  &sys_reset           &trans                   &trans           &trans  &trans  &bt BT_NXT
+&win_combo TILDE       &win_ctrl_combo SPACE  &trans              &win_combo PAGE_DOWN  &win_combo PAGE_UP   &trans               &kp K_PREV           &kp C_PLAY_PAUSE         &kp C_NEXT       &trans  &trans  &trans
+&win_combo T           &win_combo Z           &rwin_combo LEFT_ARROW  &win_combo DOWN_ARROW  &win_combo UP_ARROW  &rwin_combo RIGHT   &kp C_VOL_DN         &kp K_MUTE               &kp C_VOLUME_UP  &trans  &trans  &trans
+&win_combo TAB         &trans                 &win_ctrl_combo D      &win_ctrl_combo LEFT   &win_ctrl_combo RIGHT  &win_ctrl_combo F4  &kp LC(PRINTSCREEN)  &kp LA(LC(PRINTSCREEN))  &trans           &trans  &trans  &trans
                                                           &trans              &trans               &trans               &trans               &trans                   &trans
             >;
         };
