@@ -300,11 +300,11 @@
         sym_ru {
             display-name = "Sym RU";
             bindings = <
-&trans  &trans  &trans     &trans     &trans     &trans      &trans        &trans       &trans     &trans            &trans       &trans
-&trans  &trans  &en CARET  &en LT     &en GT     &en GRAVE   &kp UNDER     &kp MINUS    &kp EQUAL  &kp PLUS          &none        &trans
-&trans  &trans  &en TILDE  &en LBRC   &en RBRC   &kp RU_DQT  &kp RU_COLON  &kp RU_SEMI  &en PIPE   &kp RU_BACKSLASH  &kp RU_FSLH  &kp EXCL
-&trans  &trans  &kp STAR   &kp LPAR   &kp RPAR   &kp RU_DQT  &en AT        &kp PRCNT    &en AMPS   &en HASH          &kp DOLLAR   &kp RU_QMARK
-                           &kp LG(V)  &kp LC(V)  &kp LC(C)   &trans        &trans       &trans
+&trans  &trans  &trans     &trans     &trans     &trans         &trans     &trans     &trans         &trans        &trans          &trans
+&trans  &trans  &en CARET  &en LT     &en GT     &en GRAVE      &kp PLUS   &kp MINUS  &kp EQUAL      &kp STAR     &en SQT        &kp RU_DQT
+&trans  &trans  &en TILDE  &en LBRC   &en RBRC   &en AMPS       &kp RU_COLON  &kp RU_SEMI  &kp RU_BACKSLASH  &kp RU_FSLH  &kp RU_COMMA   &kp RU_DOT
+&trans  &trans  &none      &kp LPAR   &kp RPAR   &kp PRCNT      &en AT     &en HASH   &kp UNDER      &en PIPE     &kp EXCL        &kp RU_QMARK
+                           &kp LG(V)  &kp LC(V)  &kp LC(C)      &trans     &trans     &trans
             >;
         };
 
