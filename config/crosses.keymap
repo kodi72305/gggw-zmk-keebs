@@ -291,7 +291,7 @@
             bindings = <
 &trans  &trans  &trans     &trans     &trans     &trans         &trans     &trans     &trans         &trans        &trans          &trans
 &trans  &trans  &kp CARET  &kp LT     &kp GT     &kp GRAVE      &kp PLUS   &kp MINUS  &kp EQUAL      &kp ASTERISK  &kp APOSTROPHE  &kp DQT
-&trans  &trans  &kp TILDE  &kp LBRC   &kp RBRC   &kp AMPERSAND  &kp COLON  &kp SEMI   &kp BACKSLASH  &kp KP_SLASH  &kp KP_COMMA    &kp KP_DOT
+&trans  &trans  &kp TILDE  &kp LBRC   &kp RBRC   &kp AMPERSAND  &kp COLON  &kp SEMI   &kp BACKSLASH  &kp SLASH     &kp COMMA       &kp DOT
 &trans  &trans  &none      &kp LPAR   &kp RPAR   &kp PERCENT    &kp AT     &kp HASH   &kp UNDER      &kp PIPE      &kp EXCL        &kp QUESTION
                            &kp LG(V)  &kp LC(V)  &kp LC(C)      &trans     &trans     &trans
             >;
@@ -333,11 +333,11 @@
         numpad_layer {
             display-name = "Numpad";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans           &trans      &trans           &kp KP_NUM
-&trans  &trans  &trans  &trans  &trans  &trans  &kp N7  &kp N8  &kp N9           &kp N0      &kp KP_MULTIPLY  &kp KP_NUMLOCK
-&trans  &trans  &trans  &trans  &trans  &trans  &kp N4  &kp N5  &kp N6           &trans      &kp MINUS        &kp EQUAL
-&trans  &trans  &trans  &trans  &trans  &trans  &kp N1  &kp N2  &kp N3           &kp KP_DOT  &trans           &trans
-                        &trans  &trans  &trans  &trans  &trans  &kp RIGHT_SHIFT
+&trans  &trans  &trans  &trans  &trans           &trans         &trans  &trans  &trans           &trans      &trans  &kp KP_NUM
+&trans  &trans  &trans  &trans  &kp KP_MINUS     &kp KP_PLUS    &kp N7  &kp N8  &kp N9           &kp N0      &trans  &trans
+&trans  &trans  &trans  &trans  &kp KP_MULTIPLY  &kp KP_DIVIDE  &kp N4  &kp N5  &kp N6           &trans      &trans  &trans
+&trans  &trans  &trans  &trans  &trans           &kp KP_EQUAL   &kp N1  &kp N2  &kp N3           &kp KP_DOT  &trans  &trans
+                        &trans  &trans           &trans         &trans  &trans  &kp RIGHT_SHIFT
             >;
         };
 
