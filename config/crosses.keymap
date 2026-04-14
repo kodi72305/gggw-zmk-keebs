@@ -336,7 +336,7 @@
 &trans  &trans  &trans  &trans           &trans         &trans  &trans  &trans  &trans           &trans      &trans  &kp KP_NUM
 &trans  &trans  &trans  &kp KP_MINUS     &kp KP_PLUS    &trans  &kp N7  &kp N8  &kp N9           &kp N0      &trans  &trans
 &trans  &trans  &trans  &kp KP_MULTIPLY  &kp KP_DIVIDE  &trans  &kp N4  &kp N5  &kp N6           &trans      &trans  &trans
-&trans  &trans  &trans  &trans           &kp EQUAL      &trans  &kp N1  &kp N2  &kp N3           &kp KP_DOT  &trans  &trans
+&trans  &trans  &trans  &trans           &kp KP_EQUAL   &trans  &kp N1  &kp N2  &kp N3           &kp KP_DOT  &trans  &trans
                         &trans           &trans         &trans  &trans  &trans  &kp RIGHT_SHIFT
             >;
         };
