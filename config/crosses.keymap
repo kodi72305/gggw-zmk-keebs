@@ -233,11 +233,11 @@
         sym_en {
             display-name = "Sym EN";
             bindings = <
-&trans  &trans  &trans        &trans     &trans     &trans     &trans     &trans       &trans     &trans    &trans      &trans
-&trans  &trans  &kp CARET     &kp LT     &kp GT     &kp GRAVE  &kp UNDER  &kp MINUS    &kp EQUAL  &kp PLUS  &none       &trans
-&trans  &trans  &kp TILDE     &kp LBRC   &kp RBRC   &kp SQT    &kp COLON  &kp SEMI     &kp PIPE   &kp BSLH  &kp FSLH    &kp EXCL
-&trans  &trans  &kp ASTERISK  &kp LPAR   &kp RPAR   &kp DQT    &kp AT     &kp PERCENT  &kp AMPS   &kp HASH  &kp DOLLAR  &kp QUESTION
-                              &kp LG(V)  &kp LC(V)  &kp LC(C)  &trans     &trans       &trans
+&trans  &trans  &trans        &trans          &trans           &trans     &trans     &trans     &trans      &trans     &trans     &trans
+&trans  &trans  &kp CARET     &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp GRAVE  &kp PLUS   &kp MINUS  &kp EQUAL   &kp ASTRK  &kp SQT    &kp DQT
+&trans  &trans  &kp TILDE     &kp LPAR        &kp RPAR         &kp CARET  &kp COLON  &kp SEMI   &kp BSLH    &kp FSLH   &kp COMMA  &kp DOT
+&trans  &trans  &kp ASTERISK  &kp LBKT        &kp RBKT         &kp DQT    &kp AT     &kp HASH   &kp UNDER   &kp PIPE   &kp EXCL   &kp QUESTION
+                              &kp LG(V)       &kp LC(V)        &kp LC(C)  &trans     &kp AMPS   &kp DOLLAR
             >;
         };
 
